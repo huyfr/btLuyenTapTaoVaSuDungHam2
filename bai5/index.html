@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let firstInput=parseInt(prompt("Nhap so dau tien"));
+    let secondInput=parseInt(prompt("Nhap so thu hai"));
+    let thirdInput=parseInt(prompt("Nhap so thu ba"));
+
+    function findMin(first, second, third)
+    {
+        if (first<second && first<third)
+        {
+            return first
+        }
+        else
+        {
+            if (second<first && second<third)
+            {
+                return second;
+            }
+            else
+                return third;
+        }
+    }
+    let min=findMin(firstInput, secondInput, thirdInput);
+    alert("So nho nhat trong 3 so: "+firstInput+" "+secondInput+" "+thirdInput+" la "+min);
+</script>
+</body>
+</html>

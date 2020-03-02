@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<script>
+    function reverseArray(arr)
+    {
+        let first=0;
+        let last=arr.length-1;
+        while(first<last)
+        {
+            let temp=arr[first];
+            arr[first]=arr[last];
+            arr[last]=temp;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+
+    let arrBefore=[1,-5,6,-9,2,3,10,39,-6];
+    document.write("Before: "+arrBefore+"<br>");
+    let arrAfter=reverseArray(arrBefore);
+    document.write("After: "+arrAfter);
+</script>
+</body>
+</html>

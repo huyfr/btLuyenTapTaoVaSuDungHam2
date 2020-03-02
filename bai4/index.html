@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let inputNumber=prompt("Nhap ky tu de kiem tra");
+
+    function checkCharacters(input)
+    {
+        if (input==parseFloat(input))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    alert("Ky tu "+inputNumber+" la "+checkCharacters(inputNumber));
+</script>
+</body>
+</html>

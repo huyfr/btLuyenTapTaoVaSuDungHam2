@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    function factorial(number)
+    {
+        if (number<2)
+        {
+            return 1;
+        }
+        return number*factorial(--number);
+    }
+    let inputNumber=prompt("Nhap so can tinh: ");
+    alert("Gia thua cua "+inputNumber+" : "+factorial(inputNumber));
+</script>
+</body>
+</html>

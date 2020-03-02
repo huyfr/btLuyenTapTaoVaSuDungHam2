@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    let firstInput=parseInt(prompt("Nhap so dau tien:"));
+    let secondInput=parseInt(prompt("Nhap so thu hai:"));
+
+    function changingPosition(first, second)
+    {
+        first = first+second;
+        second= first-second;
+        first= first-second;
+
+        document.write("After: "+first+" "+second);
+    }
+    document.write("Before: "+firstInput+" "+secondInput+"<br>");
+    changingPosition(firstInput, secondInput);
+</script>
+</body>
+</html>

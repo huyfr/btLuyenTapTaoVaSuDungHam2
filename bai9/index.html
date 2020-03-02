@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+<script>
+    function checkCharacters(arr, characters)
+    {
+        let count=0;
+        for (let i=0; i<arr.length; i++)
+        {
+            if (characters==arr[i])
+            {
+                count++;
+            }
+        }
+        if (count>0)
+        {
+            return count;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
+    let arrInput=["h","e","l","l","o"];
+    document.write("Mang ban dau: "+arrInput+"<br>");
+    let input=prompt("Nhap ki tu can tim");
+    document.write("Ki tu "+input+" xuat hien "+checkCharacters(arrInput, input)+" lan");
+
+</script>
+</body>
+</html>
